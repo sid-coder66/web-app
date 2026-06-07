@@ -3,7 +3,7 @@ const siteConfig = {
   tagline: 'Together we Scale',
   logo: '/complywise-logo.png',
   description: 'Global outsourcing firm experienced in identifying, assessing and solving all your challenges',
-  calendlyUrl: 'https://calendly.com/your-username',
+  calendlyUrl: 'https://calendly.com/thecomplywise/30min',
   contact: {
     email: 'info@yourcompany.com',
     privacyEmail: 'privacy@yourcompany.com',
