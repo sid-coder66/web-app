@@ -7,7 +7,7 @@ import { openCalendly } from '../../hooks/useCalendly'
 import MobileMenu from './MobileMenu'
 
 // Pages without a dark hero background need the header in solid mode
-const LIGHT_BG_PAGES = ['/contact-us', '/get-in-touch', '/terms', '/privacy']
+const LIGHT_BG_PAGES = ['/', '/contact-us', '/get-in-touch', '/terms', '/privacy']
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false)
@@ -50,8 +50,9 @@ export default function Header() {
         <Link to="/" className="flex items-center gap-3">
           <img src={siteConfig.logo} alt={siteConfig.companyName} className="h-12" />
           <div>
-            <span className={`font-bold text-xl transition-colors duration-300 ${isSolid ? 'text-gray-900' : 'text-white'}`}>
-              {siteConfig.companyName}
+            <span className="font-bold text-xl">
+              <span className="text-green-800">Comply</span>
+              <span className="text-[#71B850]">Wise</span>
             </span>
             <span className={`block text-xs transition-colors duration-300 ${isSolid ? 'text-gray-500' : 'text-white/70'}`}>
               {siteConfig.tagline}

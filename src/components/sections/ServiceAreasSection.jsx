@@ -48,14 +48,6 @@ function ServiceAreaCard({ title, description, icon, stat, features, ctaLabel, c
         </ul>
       )}
 
-      <div className="mt-auto pt-4">
-        <button
-          onClick={openCalendly}
-          className="inline-block text-green-600 font-semibold text-sm hover:text-green-700 transition-colors cursor-pointer"
-        >
-          {ctaLabel || 'Learn More'} &rarr;
-        </button>
-      </div>
     </motion.div>
   )
 }

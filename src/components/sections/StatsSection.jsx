@@ -5,7 +5,7 @@ import StaggerContainer from '../ui/StaggerContainer'
 export default function StatsSection({ stats }) {
   return (
     <section className="py-16 bg-gray-50 overflow-hidden">
-      <StaggerContainer className="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8" staggerDelay={0.15}>
+      <StaggerContainer className="max-w-7xl mx-auto px-4 flex flex-wrap justify-center gap-0" staggerDelay={0.15}>
         {stats.map((stat, i) => (
           <motion.div
             key={i}
@@ -13,7 +13,7 @@ export default function StatsSection({ stats }) {
               hidden: { opacity: 0, scale: 0.5 },
               visible: { opacity: 1, scale: 1, transition: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] } },
             }}
-            className="text-center p-6 relative"
+            className="text-center p-6 relative w-48 md:w-64"
           >
             <div className="text-4xl md:text-5xl font-bold text-green-600 mb-2">
               <AnimatedCounter value={stat.value} />

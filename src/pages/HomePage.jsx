@@ -3,14 +3,10 @@ import { openCalendly } from '../hooks/useCalendly'
 import HeroSection from '../components/sections/HeroSection'
 import StatsSection from '../components/sections/StatsSection'
 import ServicesOverview from '../components/sections/ServicesOverview'
-import MethodologySection from '../components/sections/MethodologySection'
 import DifferentiatorsSection from '../components/sections/DifferentiatorsSection'
 import ServiceAreasSection from '../components/sections/ServiceAreasSection'
-import TestimonialsSection from '../components/sections/TestimonialsSection'
-import CTABannerSection from '../components/sections/CTABannerSection'
 import BlogPreviewSection from '../components/sections/BlogPreviewSection'
 import FAQSection from '../components/sections/FAQSection'
-import NewsletterSection from '../components/sections/NewsletterSection'
 import SectionHeading from '../components/ui/SectionHeading'
 import AnimateOnScroll from '../components/ui/AnimateOnScroll'
 
@@ -38,9 +34,7 @@ export default function HomePage() {
 
       <ServicesOverview services={homeContent.services} />
 
-      <MethodologySection {...homeContent.methodology} />
-
-      <StatsSection stats={homeContent.stats} />
+<StatsSection stats={homeContent.stats} />
 
       {/* Service Areas */}
       <ServiceAreasSection
@@ -50,15 +44,6 @@ export default function HomePage() {
 
       <DifferentiatorsSection items={homeContent.differentiators} />
 
-      {/* CTA Banner */}
-      {homeContent.ctaBanner && (
-        <CTABannerSection
-          heading={homeContent.ctaBanner.heading}
-          image={homeContent.ctaBanner.image}
-        />
-      )}
-
-      <TestimonialsSection testimonials={homeContent.testimonials} />
 
       <BlogPreviewSection {...homeContent.blogPreview} />
 
@@ -83,7 +68,6 @@ export default function HomePage() {
 
       <FAQSection items={homeContent.faq} />
 
-      <NewsletterSection />
     </>
   )
 }

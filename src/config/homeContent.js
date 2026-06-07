@@ -1,13 +1,13 @@
 const homeContent = {
   hero: {
-    title: 'Global Talent, Local Insight — Audit Support That Delivers',
-    subtitle: 'Flexible Audit Support Designed for Global Accounting Firms',
+    title: "We don't just help you comply,\nWe help you lead wisely…",
+    subtitle: 'Your Trusted Offshore Audit & Accounting Partner\nHigh-Quality Delivery, Flexible Capacity, and Big-Firm Expertise.',
     description: 'Say yes to more audits without stretching your core team thin.',
     ctas: [
       { label: 'Schedule a Meeting', calendly: true, variant: 'primary' },
       { label: 'Learn More', path: '/about-us', variant: 'secondary' },
     ],
-    backgroundImage: '/images/hero-bg.webp',
+    backgroundImage: null,
   },
   valueProposition: {
     heading: 'Rooted in relationships. Measured by results',
@@ -16,32 +16,23 @@ const homeContent = {
   },
   services: [
     {
-      title: 'Audit File Preparation',
-      description: 'Get structured, review-ready audit files — from trial balance to referencing — delivered by a team that knows your standards.',
-      link: '/services/audit-file-preparation',
+      title: 'Audit & Assurance',
+      description: 'End to end audit procedures along with pre and post filing compliances for the client by our experienced team members.',
+      // link: '/services/audit-file-preparation',
       icon: 'FaFileAlt',
     },
     {
-      title: 'Partner-Ready Audit Delivery',
-      description: 'Files built for final review. We follow your internal QA process to deliver audit files ready for partner sign-off.',
-      link: '/services/partner-ready-audit-delivery',
-      icon: 'FaCheckCircle',
+      title: 'Accounting & Bookkeeping',
+      description: 'Day to day financial transactions recording along with accounts receivable & payable management and accounting of complex transactions. ',
+      // link: '/services/partner-ready-audit-delivery',
+      icon: 'FaFileAlt',
     },
   ],
-  methodology: {
-    heading: 'Putting the right solutions and methods in place',
-    subheading: 'Building Audit Capacity with the Right Solutions and Smarter Methods.',
-    description: 'At CapacityHive, we partner with audit firms to deliver precise, scalable, and compliant audit support. Our methodology fuses technical excellence with operational agility, ensuring your firm is equipped to meet rising regulatory demands while achieving sustainable, profitable growth. We exist to enhance — not disrupt — your audit practice.',
-    description2: 'Our solutions are engineered to integrate seamlessly with your firm\'s audit methodology, quality control frameworks, and client commitments. From advanced substantive testing to meticulous workpaper preparation and financial statement drafting, every process we support is built to uphold your firm\'s reputation for rigour, reliability, and technical precision.',
-    description3: 'Consulting services tailored for your financial needs! CapacityHive offers more than offshore audit teams — we offer continuity, strategic capacity, and confidence at scale. Partner with us to fortify your audit delivery, protect your brand, and unlock new levels of operational excellence without compromise.',
-    videoImage: '/images/video-banner.webp',
-    videoUrl: '',
-  },
   stats: [
-    { value: '98%', label: 'Audit files passed Partner or regulatory review first time.' },
-    { value: '1 Day', label: 'Average turnaround for core documentation support requests.' },
-    { value: '0%', label: 'Compromises. We don\'t trade speed for audit quality.' },
-    { value: '100%', label: 'Aligned. We follow your templates, tools, and methodology.' },
+    // { value: '98%', label: 'Audit files passed Partner or regulatory review first time.' },
+    { value: '3 Days', label: 'Average turnaround time for core documentation support requests' },
+    { value: '0%', label: 'Compromises. We don\'t trade speed for audit quality documentation' },
+    { value: '100%', label: 'Aligned with your firm. We follow your templates, tools and methodology' },
   ],
   serviceAreas: [
     {

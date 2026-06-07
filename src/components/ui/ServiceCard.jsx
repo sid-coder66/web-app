@@ -20,9 +20,9 @@ export default function ServiceCard({ title, description, link, icon }) {
       )}
       <h3 className="text-xl font-bold text-gray-900 mb-3">{title}</h3>
       <p className="text-gray-600 mb-4">{description}</p>
-      <Link to={link} className="inline-flex items-center gap-2 text-green-600 font-semibold group-hover:gap-3 transition-all duration-300">
+      {/* <Link to={link} className="inline-flex items-center gap-2 text-green-600 font-semibold group-hover:gap-3 transition-all duration-300">
         Read More <span className="text-lg">&rarr;</span>
-      </Link>
+      </Link> */}
     </motion.div>
   )
 }
