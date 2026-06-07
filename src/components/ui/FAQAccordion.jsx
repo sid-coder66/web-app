@@ -12,7 +12,7 @@ export default function FAQAccordion({ items }) {
           key={i}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           transition={{ delay: i * 0.05, duration: 0.4 }}
           className={`border rounded-xl overflow-hidden transition-colors duration-200 ${
             openIndex === i ? 'border-green-300 bg-green-50/50 shadow-sm' : 'border-gray-200 bg-white'

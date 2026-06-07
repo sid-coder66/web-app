@@ -16,7 +16,7 @@ export default function NewsletterSignup({ variant = 'default' }) {
     <motion.div
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
+      viewport={{ once: false }}
       transition={{ duration: 0.6 }}
       className={`${isFullWidth ? 'bg-gradient-to-r from-green-700 to-green-600 py-16' : 'py-12'}`}
     >

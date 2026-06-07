@@ -3,7 +3,7 @@ import { useInView } from 'framer-motion'
 
 export default function AnimatedCounter({ value, duration = 2000 }) {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true })
+  const isInView = useInView(ref, { once: false })
   const [displayValue, setDisplayValue] = useState('0')
 
   useEffect(() => {

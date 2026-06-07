@@ -33,7 +33,7 @@ export default function AnimateOnScroll({
   delay = 0,
   duration = 0.6,
   className = '',
-  once = true,
+  once = false,
 }) {
   return (
     <motion.div

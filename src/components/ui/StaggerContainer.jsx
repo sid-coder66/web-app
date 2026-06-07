@@ -5,7 +5,7 @@ export default function StaggerContainer({ children, className = '', staggerDela
     <motion.div
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, margin: '-50px' }}
+      viewport={{ once: false, margin: '-50px' }}
       variants={{
         hidden: {},
         visible: { transition: { staggerChildren: staggerDelay } },
