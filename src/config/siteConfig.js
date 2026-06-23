@@ -5,7 +5,7 @@ const siteConfig = {
   description: 'Global outsourcing firm experienced in identifying, assessing and solving all your challenges',
   calendlyUrl: 'https://calendly.com/thecomplywise/30min',
   contact: {
-    email: 'info@yourcompany.com',
+    email: 'thecomplywise@gmail.com',
     privacyEmail: 'privacy@yourcompany.com',
   },
   socials: {

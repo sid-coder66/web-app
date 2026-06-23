@@ -217,7 +217,7 @@ const siteConfig = {
   logo: '/logo.svg',
   description: 'Global consulting firm experienced in identifying, assessing, and solving all your business challenges.',
   contact: {
-    email: 'info@yourcompany.com',
+    email: 'thecomplywise@gmail.com',
     privacyEmail: 'privacy@yourcompany.com',
   },
   socials: {
@@ -628,7 +628,7 @@ const legalContent = {
       { heading: 'Indemnification', body: 'You agree to defend and indemnify the company against any claims arising from your use of our services.' },
       { heading: 'User Data', body: 'You are responsible for the data you provide. We handle all data in accordance with our Privacy Policy.' },
       { heading: 'Electronic Communications', body: 'By using this site, you consent to receiving communications electronically.' },
-      { heading: 'Contact Us', body: 'For questions, contact us at info@yourcompany.com.' },
+      { heading: 'Contact Us', body: 'For questions, contact us at thecomplywise@gmail.com.' },
     ],
   },
   privacy: {
