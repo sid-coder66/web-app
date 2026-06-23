@@ -52,7 +52,7 @@ const aboutContent = {
     { step: 2, title: 'Workflow Setup', description: 'We set up secure file access, define delivery timelines, and plug into your audit stack via cloud-based systems.' },
     { step: 3, title: 'Ongoing Delivery', description: 'Our team supports you with workpapers, documentation, and financials — reviewed and formatted to your internal QA standards.' },
   ],
-  processHeading: 'How CapacityWise Fits Into Your Audit Team',
+  processHeading: 'How ComplyWise Fits Into Your Audit Team',
   teamPreview: {
     heading: 'People Who Think Like Audit Partners',
     description: 'Experienced leaders shaping how modern audit support should work.',
