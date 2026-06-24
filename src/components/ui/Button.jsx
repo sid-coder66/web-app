@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
 const variants = {
   primary: 'bg-green-600 text-white hover:bg-green-700',
@@ -6,20 +7,36 @@ const variants = {
   outline: 'bg-transparent text-white border-2 border-white hover:bg-white/10',
 }
 
+const MotionLink = motion(Link)
+
 export default function Button({ label, path, variant = 'primary', className = '', onClick }) {
-  const base = 'inline-block px-6 py-3 rounded-lg font-semibold transition-colors duration-200 text-center cursor-pointer'
+  const base = 'inline-block px-6 py-3 rounded-lg font-semibold transition-colors duration-200 text-center cursor-pointer relative overflow-hidden'
+
+  const motionProps = {
+    whileHover: { scale: 1.04, y: -2 },
+    whileTap: { scale: 0.97 },
+    transition: { type: 'spring', stiffness: 400, damping: 20 },
+  }
 
   if (onClick) {
     return (
-      <button onClick={onClick} className={`${base} ${variants[variant]} ${className}`}>
+      <motion.button
+        {...motionProps}
+        onClick={onClick}
+        className={`${base} ${variants[variant]} ${className}`}
+      >
         {label}
-      </button>
+      </motion.button>
     )
   }
 
   return (
-    <Link to={path} className={`${base} ${variants[variant]} ${className}`}>
+    <MotionLink
+      {...motionProps}
+      to={path}
+      className={`${base} ${variants[variant]} ${className}`}
+    >
       {label}
-    </Link>
+    </MotionLink>
   )
 }

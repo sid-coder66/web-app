@@ -1,2 +1,6 @@
 node_modules
 dist
+
+# Large raw video files — use hero-web.mp4 (compressed) instead
+public/videos/hero.mp4
+public/videos/COMPLYWISE_VSL_MASTER_VIDEO_GE.mp4
