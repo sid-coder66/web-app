@@ -126,7 +126,7 @@ export default function HeroSection({ title, subtitle, ctas, backgroundImage }) 
         ))}
 
         <motion.div
-          className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 pb-12 sm:pb-20 w-full"
+          className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 sm:pt-28 pb-12 sm:pb-20 w-full"
           style={{ opacity: contentOpacity, y: contentY }}
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
@@ -178,7 +178,7 @@ export default function HeroSection({ title, subtitle, ctas, backgroundImage }) 
                 transition={{ delay: 1.15, duration: 0.6 }}
                 className="flex flex-wrap gap-4 sm:gap-6 mt-8 pt-8 border-t border-gray-100"
               >
-                {['Big-4 Experienced Team', 'GDPR Compliant', '3-Day Turnaround'].map((badge, i) => (
+                {['Big-4 Experienced Team', 'GDPR Compliant', '3-Day Turnaround', 'Trusted by growing firms'].map((badge, i) => (
                   <motion.div
                     key={i}
                     initial={{ opacity: 0, y: 10 }}
@@ -221,17 +221,6 @@ export default function HeroSection({ title, subtitle, ctas, backgroundImage }) 
                 </video>
               </div>
 
-              {/* Floating badge on video */}
-              <motion.div
-                initial={{ opacity: 0, scale: 0.7, y: 20 }}
-                animate={{ opacity: 1, scale: 1, y: 0 }}
-                transition={{ delay: 1.3, duration: 0.5, ease: [0.34, 1.56, 0.64, 1] }}
-                whileHover={{ scale: 1.05 }}
-                className="absolute -bottom-4 -left-4 bg-white rounded-xl shadow-xl px-4 py-3 flex items-center gap-2 border border-green-100"
-              >
-                <span className="w-3 h-3 rounded-full bg-green-500 flex-shrink-0" />
-                <span className="text-xs font-semibold text-gray-700">Trusted by growing firms</span>
-              </motion.div>
             </motion.div>
           </div>
         </motion.div>
